@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
+import './Home.css';
 
 function Home({
    items,
@@ -26,8 +27,8 @@ function Home({
    };
 
    return (
-      <div className="content p-40">
-         <div className="d-flex align-center justify-between mb-40">
+      <div className="content card-content">
+         <div className="contaner-s d-flex align-center justify-between mb-40">
             <h1>
                {searchValue == '' ? 'Все номера' : 'Поиск по запросу: ' + "'" + searchValue + "'"}
             </h1>

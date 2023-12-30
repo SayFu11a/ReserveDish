@@ -13,7 +13,7 @@ const AppRouter = () => {
 
    // console.log(user);
 
-   const user = false;
+   const user = true;
 
    return user ? (
       <Routes>

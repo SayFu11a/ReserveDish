@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { useCart } from '../hooks/useCart';
+import styles from './Header.module.scss';
+
+import { useCart } from '../../hooks/useCart';
 
 function Header(props) {
    const { priceSum } = useCart();
 
    return (
-      <header className="d-flex justify-between align-center p-40">
+      <header className={styles.container + ' d-flex justify-between align-center'}>
          <Link to="/">
             <div className="align-center d-flex">
                <img
@@ -17,12 +19,12 @@ function Header(props) {
                   alt="Logopng"
                />
                <div>
-                  <h3>RentRooms</h3>
-                  <p className="opacity-5">система для бронирования номеров в гостиницах</p>
+                  <h3 className={styles.name}>RentRooms</h3>
+                  <p className={styles.title}>система для бронирования номеров в гостиницах</p>
                </div>
             </div>
          </Link>
-         <ul className="d-flex">
+         <ul className={styles.iCart}>
             <li className="mr-30 cu-p" onClick={props.onClickCart}>
                <img
                   width={18}

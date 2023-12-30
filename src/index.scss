@@ -15,6 +15,11 @@ body {
   margin: 0 auto;
   margin-top: 85px;
   margin-bottom: 60px;
+
+  @media (max-width: 659px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 * {

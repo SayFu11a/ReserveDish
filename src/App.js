@@ -114,7 +114,7 @@ function App() {
       return cartItem.some((obj) => +obj.parentId === +id);
    };
 
-   const user = true;
+   const user = false;
 
    return (
       <AppContext.Provider

@@ -51,6 +51,7 @@ function Card({
                {onFavorite && (
                   <div className={styles.favorite}>
                      <img
+                        className={styles.favoriteIcon}
                         onClick={onClickFavorite}
                         src={
                            isOnFavorite
@@ -61,7 +62,7 @@ function Card({
                      />
                   </div>
                )}
-               <img width={560} height={295} src={imgUrl} alt="Sneakers" />
+               <img className={styles.imgRoom} src={imgUrl} alt="Sneakers" />
                <h5 className={styles.title}>{title}</h5>
                <div className="d-flex flex-row justify-content-start">
                   <div className={styles.price}>
