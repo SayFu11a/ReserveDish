@@ -12,15 +12,12 @@ function Header(props) {
       <header className={styles.container + ' d-flex justify-between align-center'}>
          <Link to="/">
             <div className="align-center d-flex">
-               <img
-                  width={80}
-                  height={60}
-                  src="https://raw.githubusercontent.com/SayFu11a/-/main/chrome_yD1kImMOnf.png"
-                  alt="Logopng"
-               />
+               <img width={80} height={60} src="./../../../public/img/logoDish.png" alt="Logopng" />
                <div>
-                  <h3 className={styles.name}>RentRooms</h3>
-                  <p className={styles.title}>система для бронирования номеров в гостиницах</p>
+                  <h3 className={styles.name}>ReserveDish</h3>
+                  <p className={styles.title}>
+                     cервис для онлайн-резервирования столиков в ресторане
+                  </p>
                </div>
             </div>
          </Link>
