@@ -30,7 +30,7 @@ function Home({
       <div className="content card-content">
          <div className="contaner-s d-flex align-center justify-between mb-40">
             <h1>
-               {searchValue == '' ? 'Все номера' : 'Поиск по запросу: ' + "'" + searchValue + "'"}
+               {searchValue == '' ? 'Все столики' : 'Поиск по запросу: ' + "'" + searchValue + "'"}
             </h1>
             <div className="serch-block d-flex">
                <img

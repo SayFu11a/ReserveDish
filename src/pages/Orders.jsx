@@ -12,7 +12,7 @@ function Orders() {
    React.useEffect(() => {
       const fetchData = async () => {
          try {
-            const { data } = await axios.get('https://6589a9df324d41715259500c.mockapi.io/order');
+            const { data } = await axios.get('https://6638b9c04253a866a24ef090.mockapi.io/orders');
             if (data && data.length > 0) {
                setOrders(data.map((obj) => obj.items).flat());
                setIsLoading(false);
@@ -32,7 +32,7 @@ function Orders() {
    return (
       <div className="content p-40">
          <div className="d-flex align-center justify-between mb-40">
-            <h1>Мои покупки</h1>
+            <h1>Мои резевации</h1>
          </div>
 
          <div className="d-flex flex-wrap">
